@@ -2,7 +2,7 @@
 
 Welcome to my new series on building a ray tracer from scratch in C++ with the SDL2 library! Follow me in this 'code with me' style series as I build a simple but functional ray tracer from scratch in C++. As far as possible, I use only the standard libraries, with the addition of SDL2 to allow the display of the final image in a window. Note that the SDL2 library is not included here, you will have to obtain and install that yourself from the SDL2 website in order to use the qbRayTrace code.
 
-The code corresponding to each episode of the video series is in the corresponding sub-folder, so Ep1Code for episode 1, Ep2Code for episode 2 and so on.
+The code corresponding to each episode of the video series is in the corresponding sub-folder, so Ep1Code for episode 1, Ep2Code for episode 2 and so on. Each of these is intended to be stand-alone and the code for that specific episode can be compiled with the makefile in the folder and run.
 
 This code is intended to be primarily for educational purposes and to be studied alongside the corresponding videos on the QuantitativeBytes YouTube channel.
 
