@@ -22,3 +22,5 @@ https://youtu.be/JN5yUrJPThI
 In this episode I go over the basic geometry of the virtual camera that we use to actually make ray tracing work. We take a look at the basic geometry and how it works and then go on to look at how to implement that in C++ code.
 
 https://youtu.be/KBK6g6RFgdA
+
+Note that for this episode and beyond, the qbLinAlg repository code is also included.
