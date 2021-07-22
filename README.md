@@ -24,3 +24,5 @@ In this episode I go over the basic geometry of the virtual camera that we use t
 https://youtu.be/KBK6g6RFgdA
 
 Note that for this episode and beyond, the qbLinAlg repository code is also included.
+
+## More episodes to follow...
