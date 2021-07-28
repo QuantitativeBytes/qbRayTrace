@@ -8,7 +8,7 @@
 	in the series of videos on the QuantitativeBytes YouTube
 	channel.
 	
-	This code corresponds specifically to Episode 2 of the series,
+	This code corresponds specifically to Episode 3 of the series,
 	which may be found here:
 	https://youtu.be/8fWZM8hCX5E
 	
