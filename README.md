@@ -25,4 +25,10 @@ https://youtu.be/KBK6g6RFgdA
 
 Note that for this episode and beyond, the qbLinAlg repository code is also included.
 
+## Episode 3
+
+This episode focuses on ray-sphere intersection and the problem of how to compute the location of the intersection. We then go on to look at how to write code to actual implement this to allow us to produce our first, very simple, image of a sphere shaded by distance from the camera.
+
+https://youtu.be/8fWZM8hCX5E
+
 ## More episodes to follow...
