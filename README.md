@@ -33,4 +33,10 @@ This episode focuses on ray-sphere intersection and the problem of how to comput
 
 https://youtu.be/8fWZM8hCX5E
 
+## Episode 4
+
+In this episode we extend our code to allow support for multiple objects and add support for simple point lights, going on to produce an image of the red sphere shaded by the light of a single point source. We will go on to build on this in later episodes, adding greater complexity as we go, but we are already producing an image that is starting to look a bit more interesting!
+
+https://youtu.be/dUtkihuUvvo
+
 ## More episodes to follow...
