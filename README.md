@@ -39,4 +39,10 @@ In this episode we extend our code to allow support for multiple objects and add
 
 https://youtu.be/dUtkihuUvvo
 
+## Episode 5
+
+In this episode of my series on writing a ray tracer in C++ with the SDL2 library, I cover the topic of geometric transforms and how we can move between local and world coordinate systems. I show how to build a class to allow us to work with geometric transforms easily and then use this to allow us to not only position objects anywhere in our scene, but also to scale them by different amounts on each axis. Although we can still only render spheres at the moment, we can now scale them unevenly to give ovoid shapes. This approach of defining objects in a local coordinate system and then transforming that into the world coordinate system makes it much easier to create more complex shapes such as cones and cylinders, as we will see in later episodes.
+
+https://youtu.be/-Apu2BNp3t8
+
 ## More episodes to follow...
