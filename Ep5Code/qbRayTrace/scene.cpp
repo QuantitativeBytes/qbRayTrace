@@ -44,16 +44,16 @@ qbRT::Scene::Scene()
 	// Modify the spheres.
 	qbRT::GTform testMatrix1, testMatrix2, testMatrix3;
 	testMatrix1.SetTransform(	qbVector<double>{std::vector<double>{-1.5, 0.0, 0.0}},
-														qbVector<double>{std::vector<double>{0.0, 0.0, 0.0}},
-														qbVector<double>{std::vector<double>{0.5, 0.5, 0.75}});
+					qbVector<double>{std::vector<double>{0.0, 0.0, 0.0}},
+					qbVector<double>{std::vector<double>{0.5, 0.5, 0.75}});
 														
 	testMatrix2.SetTransform(	qbVector<double>{std::vector<double>{0.0, 0.0, 0.0}},
-														qbVector<double>{std::vector<double>{0.0, 0.0, 0.0}},
-														qbVector<double>{std::vector<double>{0.75, 0.5, 0.5}});
+					qbVector<double>{std::vector<double>{0.0, 0.0, 0.0}},
+					qbVector<double>{std::vector<double>{0.75, 0.5, 0.5}});
 														
 	testMatrix3.SetTransform(	qbVector<double>{std::vector<double>{1.5, 0.0, 0.0}},
-														qbVector<double>{std::vector<double>{0.0, 0.0, 0.0}},
-														qbVector<double>{std::vector<double>{0.75, 0.75, 0.75}});
+					qbVector<double>{std::vector<double>{0.0, 0.0, 0.0}},
+					qbVector<double>{std::vector<double>{0.75, 0.75, 0.75}});
 														
 	m_objectList.at(0) -> SetTransformMatrix(testMatrix1);
 	m_objectList.at(1) -> SetTransformMatrix(testMatrix2);
@@ -126,8 +126,8 @@ bool qbRT::Scene::Render(qbImage &outputImage)
 					{
 						//outputImage.SetPixel(x, y, 255.0 * intensity, 0.0, 0.0);
 						outputImage.SetPixel(x, y,	localColor.GetElement(0) * intensity,
-																				localColor.GetElement(1) * intensity,
-																				localColor.GetElement(2) * intensity);
+										localColor.GetElement(1) * intensity,
+										localColor.GetElement(2) * intensity);
 					}
 					else
 					{
@@ -149,17 +149,3 @@ bool qbRT::Scene::Render(qbImage &outputImage)
 	
 	return true;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
