@@ -46,8 +46,8 @@ namespace qbRT
 			
 			// Function to set translation, rotation and scale components.
 			void SetTransform(	const qbVector<double> &translation,
-													const qbVector<double> &rotation,
-													const qbVector<double> &scale);
+						const qbVector<double> &rotation,
+						const qbVector<double> &scale);
 													
 			// Functions to return the transform matrices.
 			qbMatrix2<double> GetForward();
