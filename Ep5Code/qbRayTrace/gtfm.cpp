@@ -27,7 +27,7 @@
 qbRT::GTform::GTform()
 {
 	/* Set forward and backward transforms to
-		identity matrices. */
+	identity matrices. */
 	m_fwdtfm.SetToIdentity();
 	m_bcktfm.SetToIdentity();
 }
@@ -42,7 +42,7 @@ qbRT::GTform::GTform(const qbMatrix2<double> &fwd, const qbMatrix2<double> &bck)
 {
 	// Verify that the inputs are 4x4.
 	if (	(fwd.GetNumRows() != 4) || (fwd.GetNumCols() != 4) ||
-				(bck.GetNumRows() != 4) || (bck.GetNumCols() != 4))
+		(bck.GetNumRows() != 4) || (bck.GetNumCols() != 4))
 	{
 		throw std::invalid_argument("Cannot construct GTform, inputs are not all 4x4.");
 	}
@@ -52,16 +52,16 @@ qbRT::GTform::GTform(const qbMatrix2<double> &fwd, const qbMatrix2<double> &bck)
 }
 
 // Function to set the transform.
-void qbRT::GTform::SetTransform(	const qbVector<double> &translation,
-																	const qbVector<double> &rotation,
-																	const qbVector<double> &scale)
+void qbRT::GTform::SetTransform(const qbVector<double> &translation,
+				const qbVector<double> &rotation,
+				const qbVector<double> &scale)
 {
 	// Define a matrix for each component of the transform.
 	qbMatrix2<double> translationMatrix	{4, 4};
-	qbMatrix2<double> rotationMatrixX		{4, 4};
-	qbMatrix2<double>	rotationMatrixY		{4, 4};
-	qbMatrix2<double> rotationMatrixZ		{4, 4};
-	qbMatrix2<double>	scaleMatrix				{4, 4};
+	qbMatrix2<double> rotationMatrixX	{4, 4};
+	qbMatrix2<double>	rotationMatrixY	{4, 4};
+	qbMatrix2<double> rotationMatrixZ	{4, 4};
+	qbMatrix2<double>	scaleMatrix	{4, 4};
 	
 	// Set these to identity.
 	translationMatrix.SetToIdentity();
@@ -99,10 +99,10 @@ void qbRT::GTform::SetTransform(	const qbVector<double> &translation,
 	
 	// Combine to give the final forward transform matrix.
 	m_fwdtfm =	translationMatrix * 
-							scaleMatrix *
-							rotationMatrixX *
-							rotationMatrixY *
-							rotationMatrixZ;
+			scaleMatrix *
+			rotationMatrixX *
+			rotationMatrixY *
+			rotationMatrixZ;
 							
 	// Compute the backwards transform.
 	m_bcktfm = m_fwdtfm;
@@ -148,9 +148,9 @@ qbVector<double> qbRT::GTform::Apply(const qbVector<double> &inputVector, bool d
 {
 	// Convert inputVector to a 4-element vector.
 	std::vector<double> tempData {	inputVector.GetElement(0),
-																	inputVector.GetElement(1),
-																	inputVector.GetElement(2),
-																	1.0 };
+					inputVector.GetElement(1),
+					inputVector.GetElement(2),
+					1.0 };
 	qbVector<double> tempVector {tempData};
 	
 	// Create a vector for the result.
@@ -169,8 +169,8 @@ qbVector<double> qbRT::GTform::Apply(const qbVector<double> &inputVector, bool d
 	
 	// Reform the output as a 3-element vector.
 	qbVector<double> outputVector {std::vector<double> {	resultVector.GetElement(0),
-																												resultVector.GetElement(1),
-																												resultVector.GetElement(2) }};
+								resultVector.GetElement(1),
+								resultVector.GetElement(2) }};
 																					
 	return outputVector;
 }
@@ -243,42 +243,3 @@ void qbRT::GTform::PrintVector(const qbVector<double> &inputVector)
 		std::cout << std::fixed << std::setprecision(3) << inputVector.GetElement(row) << std::endl;
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
