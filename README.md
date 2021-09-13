@@ -47,7 +47,7 @@ https://youtu.be/-Apu2BNp3t8
 
 ## Episode 6
 
-Continuing with the series of writing a ray tracer from scratch using C++ and the SDL2 library, this episode focuses on implementing planes. Spheres and planes are the stable of ray tracing tutorials, as they are the most easy shapes to implement. But, the geometric transform code that we created in the last episode makes implementing planes even easier because we can define the object in it's own, local coordinate system. We also take a look at the lighting code and modify that so that objects cast shadows and we modify the image handling code to automatically take care of the dynamic range for us.
+Continuing with the series of writing a ray tracer from scratch using C++ and the SDL2 library, this episode focuses on implementing planes. Spheres and planes are the staple of ray tracing tutorials, as they are the most easy shapes to implement. But, the geometric transform code that we created in the last episode makes implementing planes even easier because we can define the object in it's own, local coordinate system. We also take a look at the lighting code and modify that so that objects cast shadows and we modify the image handling code to automatically take care of the dynamic range for us.
 
 https://youtu.be/9K9ZYq6KgFY
 
