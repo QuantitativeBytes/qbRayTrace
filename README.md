@@ -51,4 +51,10 @@ Continuing with the series of writing a ray tracer from scratch using C++ and th
 
 https://youtu.be/9K9ZYq6KgFY
 
+## Episode 7
+
+Continuing with the series of writing a ray tracer from scratch using C++ and the SDL2 library, this episode focuses on how to implement basic materials. We take a look at the theory of modelling diffuse shading, specular highlights based on the Phong model and reflections. These can be combined in different combinations to give the effect of different materials for objects. We also take some time to re-arrange the code base to make it tidier as we add more files, which will be especially useful later on.
+
+https://youtu.be/F5vIgpRF_Qo
+
 ## More episodes to follow...
