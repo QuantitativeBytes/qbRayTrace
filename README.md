@@ -57,4 +57,10 @@ Continuing with the series of writing a ray tracer from scratch using C++ and th
 
 https://youtu.be/F5vIgpRF_Qo
 
+## Episode 8
+
+Continuing with the series of writing a ray tracer from scratch using C++ and the SDL2 library, this episode focuses on how to implement some different shapes, in particular cones and cylinders. This is made relatively easy by the geometric transform work that we did back in Episode 5 which allows us to only worry about creating a unit cylinder or cone located at the origin in the local coordinate system. These are then transformed back into the global coordinate system to get the final result. Implementing cones and cylinders in this way gives a good example of how we can implement any surface that we can define in the implicit form.
+
+https://youtu.be/UTz7ytMJ2yk
+
 ## More episodes to follow...
