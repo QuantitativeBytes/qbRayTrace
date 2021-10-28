@@ -1,4 +1,4 @@
-	Copyright (c) 2021 Michael Bennett/* ***********************************************************
+/* ***********************************************************
 	pointlight.cpp
 	
 	The point light class implementation - A class for handling point
