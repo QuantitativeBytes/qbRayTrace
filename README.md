@@ -63,4 +63,10 @@ Continuing with the series of writing a ray tracer from scratch using C++ and th
 
 https://youtu.be/UTz7ytMJ2yk
 
+## Episode 9
+
+This episode focuses on UV space (or UV unwrapping) and how we can map textures onto the surfaces of our shapes. I introduce the basic theory of UV unwrapping and explain how it can be applied in the context of ray tracing before going on to show how to modify the ray tracing code that we have developed so far over this series to implement basic texture mapping. This finally allows us to produce a more 'classical' looking ray-traced image with a chequered floor! 
+
+https://youtu.be/d35gDi98gEY
+
 ## More episodes to follow...
