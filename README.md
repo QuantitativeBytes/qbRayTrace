@@ -69,4 +69,11 @@ This episode focuses on UV space (or UV unwrapping) and how we can map textures 
 
 https://youtu.be/d35gDi98gEY
 
-## More episodes to follow...
+## Episode 10
+
+Continuing with my series on writing a ray tracing in C++ using, as far as possible, only the standard libraries (and the SDL2 library to display results in a window), this episode focuses on how we can implement basic refractive materials such as glass or water. As usual, I start with a simple explanation of what refraction is and show some of the mathematics behind it before going on to show how to add this feature to the qbRayTracer project.
+
+Note that this also includes the code for Episode 9a (Image Textures).
+
+Episode 9a - https://youtu.be/lGTa8ceYIjA
+Episode 10 - https://youtu.be/6slB1euGMFw
