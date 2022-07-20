@@ -13,6 +13,8 @@ As the code corresponds to specific episodes of the series, pull requests will n
 The QuantitativeBytes YouTube channel can be found here:
 www.youtube.com/c/QuantitativeBytes
 
+Please note that after Episode 10, I stopped putting the code for each episode into a seperate directory / folder and instead all the more recent code is in a new repository at https://github.com/QuantitativeBytes/qbRayTrace2.
+
 ## Episode 1
 
 In this first episode I give a basic introduction to how ray tracing works and then go on to put together the basic code that is going to form the core structure of the final project.
