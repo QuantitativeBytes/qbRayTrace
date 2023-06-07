@@ -35,6 +35,40 @@ qbRT::Texture::Image::~Image()
 	}
 }
 
+// Source - https://stackoverflow.com/questions/53033971/how-to-get-the-color-of-a-specific-pixel-from-sdl-surface
+
+Uint32 getpixel(SDL_Surface *surface, int x, int y)
+{
+	int bpp = surface->format->BytesPerPixel;
+	/* Here p is the address to the pixel we want to retrieve */
+	Uint8 *p = (Uint8 *)surface->pixels + y * surface->pitch + x * bpp;
+
+	switch (bpp)
+	{
+		case 1:
+			return *p;
+			break;
+
+		case 2:
+			return *(Uint16 *)p;
+			break;
+
+		case 3:
+			if (SDL_BYTEORDER == SDL_BIG_ENDIAN)
+				return p[0] << 16 | p[1] << 8 | p[2];
+			else
+				return p[0] | p[1] << 8 | p[2] << 16;
+			break;
+
+		case 4:
+			return *(Uint32 *)p;
+			break;
+
+		default:
+			return 0;       /* shouldn't happen, but avoids warnings */
+	}
+}
+
 qbVector<double> qbRT::Texture::Image::GetColor(const qbVector<double> &uvCoords)
 {
 	qbVector<double> outputColor {4};
@@ -90,14 +124,8 @@ qbVector<double> qbRT::Texture::Image::GetColor(const qbVector<double> &uvCoords
 		if ((x >= 0) && (x < m_xSize) && (y >= 0) && (y < m_ySize))
 		{
 			// Convert (x,y) to a linear index.
-			int pixelIndex = x + (y * (m_pitch / m_bytesPerPixel));
-			
-			// Get a pointer to the pixel data.
-			uint32_t *pixels = (uint32_t *)m_imageSurface->pixels;
-			
-			// Extract the current pixel value.
-			uint32_t currentPixel = pixels[pixelIndex];
-			
+			uint32_t currentPixel = getPixel(m_imageSurface, x, y);
+		
 			// Convert to RGB.
 			uint8_t r, g, b, a;
 			SDL_GetRGBA(currentPixel, m_imageSurface->format, &r, &g, &b, &a);
